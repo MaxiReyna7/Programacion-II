@@ -1,10 +1,18 @@
 public class Funciones {
 
+}
+    public static void mostrarSaludo() {
+        System.out.println("Hola, mundo");
+    }
+    public static void saludar(String nombre) {
+        System.out.println("Hola, " + nombre + "!");
+    }
+
     public static double calcularAreaRectangulo(double base, double altura) {
         return base * altura;
     }
 
-    public static String ConvertirM(String texto) {
+    public static String convertirM(String texto) {
         return texto.toUpperCase();
     }
 
@@ -12,11 +20,9 @@ public class Funciones {
         System.out.println("1. Primera opción");
         System.out.println("2. Segunda opción");
         System.out.println("3. Tercera opción");
-        System.out.println("3. Cuarta opción");
-        System.out.println("3. Quinta opción");
+        System.out.println("4. Cuarta opción");
+        System.out.println("5. Quinta opción");
     }
-
-    //NIVEL 2
 
     public static boolean esPar(int numero) {
         return numero % 2 == 0;
@@ -26,7 +32,6 @@ public class Funciones {
         return numero * numero;
     }
 
-
     public static long factorial(int numero) {
         if (numero == 0 || numero == 1) {
             return 1;
@@ -34,8 +39,6 @@ public class Funciones {
             return numero * factorial(numero - 1);
         }
     }
-
-    //NIVEL 3
 
     public static int sumarNumeros(int... numeros) {
         int suma = 0;
@@ -74,8 +77,6 @@ public class Funciones {
         return contador;
     }
 
-    //NIVEL 4
-
     public static void imprimirArray(int[] array) {
         System.out.print("[");
         for (int i = 0; i < array.length; i++) {
@@ -108,7 +109,7 @@ public class Funciones {
     }
 
     public static void main(String[] args) {
-        mostrarSaludo();
+        // Aquí podés probar tus métodos
     }
 
-}
+
